@@ -1,2 +1,1 @@
-# aidirectory
-AI utility directory
+centralized AI utility interface
