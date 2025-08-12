@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   font-family: 'Space Grotesk', Arial, sans-serif;
+  gap: 20px;
 }
 
     
@@ -48,11 +49,11 @@ html, body {
         0px 8px 0px #746b6b,
         0px 3px 8px rgb(255, 255, 255);
     transition: all 0.2s ease;
-    transform: translateY(105px);
+    margin-top: 105px;
 
 }
 .button2{
-    background-image: linear-gradient(to right, #f508cd, #10f2d4);
+    background-image: linear-gradient(to right, #062381, #10f2d4);
     color: white;
     border:none;
     padding: 60px 92px;
@@ -65,14 +66,14 @@ html, body {
     top: 100px;
     right: 100px;
     margin-right: 700px;
-    transform: translateY(-37px);
+    margin-top: -37px;
     box-shadow: 
         0px 8px 0px #746b6b,
         0px 3px 8px rgb(255, 255, 255);
     transition: all 0.2s ease;
 }
 .button3{
-    background-image: linear-gradient(to right, #000000, #6610f2);
+    background-image: linear-gradient(to right, #000000, #6438ac);
     color: white;
     border:none;
     padding: 60px 83px;
@@ -85,13 +86,71 @@ html, body {
     top: 100px;
     right: 100px;
     margin-right: -720px;
-    transform: translateY(-181px);
+    margin-top: -181px;
     box-shadow: 
         0px 8px 0px #746b6b,
         0px 3px 8px rgb(255, 255, 255);
     transition: all 0.2s ease;
 }
-
+.button4{
+   background-image: linear-gradient(to right, #036cdd, #6610f2);
+    color: white;
+    border:none;
+    padding: 60px 80px;
+    border-radius:12px;
+    font-family: 'Trebuchet MS';
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    top: 100px;
+    right: 100px;
+    box-shadow: 
+        0px 8px 0px #746b6b,
+        0px 3px 8px rgb(255, 255, 255);
+    transition: all 0.2s ease;
+    margin-top: 105px;
+}
+.button5{
+       background-image: linear-gradient(to right, #062381, #10f2d4);
+    color: white;
+    border:none;
+    padding: 60px 92px;
+    border-radius:12px;
+    font-family: 'Trebuchet MS';
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    top: 100px;
+    right: 100px;
+    margin-right: 700px;
+    margin-top: -37px;
+    box-shadow: 
+        0px 8px 0px #746b6b,
+        0px 3px 8px rgb(255, 255, 255);
+    transition: all 0.2s ease;
+}
+.button6{
+       background-image: linear-gradient(to right, #000000, #6438ac);
+    color: white;
+    border:none;
+    padding: 60px 83px;
+    border-radius:12px;
+    font-family: 'Trebuchet MS';
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    top: 100px;
+    right: 100px;
+    margin-right: -720px;
+    margin-top: -181px;
+    box-shadow: 
+        0px 8px 0px #746b6b,
+        0px 3px 8px rgb(255, 255, 255);
+    transition: all 0.2s ease; 
+}
 body {
     margin-top: auto;
 }

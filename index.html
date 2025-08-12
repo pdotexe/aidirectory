@@ -12,36 +12,37 @@
             <header class="main-header"> 
                 <h1>AI Directory</h1>
             </header>
-            <button class = "button1" id = "assistantbutton">
+            <button class = "button1" id = "assistantbutton"  >
                 Assistants
 
             </button>
-            <button class = "button2" id = "codingbutton">
+            <button class = "button2" id = "codingbutton" onclick = "window.location.href = 'coding.html' ">
                 Coding
             </button>
-            <button class  = "button3" id = "diffusionbutton">
+            <button class  = "button3" id = "diffusionbutton" onclick = "window.location.href = 'diffusion.html'">
                 Diffusion
             </button>
         </main>
     </div>
-    <script>
-        // hover functionality
-        
-        const elements = document.querySelectorAll('button');
-        
-        elements.forEach(element => {
-            const originalBoxShadow = elements.style.boxShadow;
+    <script>    
 
-            elements.addEventListener('mouseover', () => {
-                elements.style.opacity = '0.75';
-                elements.style.boxShadow = 'none';
-            })
-            elements.addEventListener('mouseout', () => {
-                elements.style.opacity = '1';
-                elements.style.boxShadow = originalBoxShadow;
+            // hover functionality
+            const buttons = document.querySelectorAll('button'); 
 
-            })
-        })
+            buttons.forEach(buttonElement => { 
+                const originalBoxShadow = buttonElement.style.boxShadow; 
+
+                buttonElement.addEventListener('mouseover', () => { 
+                    buttonElement.style.opacity = '0.75';
+                    buttonElement.style.boxShadow = 'none';
+                });
+
+                buttonElement.addEventListener('mouseout', () => { 
+                    buttonElement.style.opacity = '1';
+                    buttonElement.style.boxShadow = originalBoxShadow; 
+                });
+            });
+            
     </script>
 </body>
 </html>

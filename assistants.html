@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang = en>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <div> 
+    <main class="page">
+      
+      <button class="button1" id="chatgpt" style="margin-top: 140px; background-image: linear-gradient(to right, #036cdd, #6610f2);">
+        ChatGPT
+      </button>
+      <script>
+        const btn = document.getElementById('chatgpt');
+        btn.addEventListener('click', () => {
+          window.open('https://chatgpt.com');
+        });
+      </script>
+
+      <button class="button2" id="Claude" style="transform: translateY(-125px); background-image: linear-gradient(to right, #036cdd, #6610f2);">
+        Claude
+      </button>
+      <script>
+        const btn2 = document.getElementById('Claude');
+        btn2.addEventListener('click', () => {
+          window.open('https://claude.ai');
+        });
+      </script>
+
+      <button class="button3" id="DeepSeek" style="transform: translateY(-110px); background-image: linear-gradient(to right, #036cdd, #6610f2);">
+        DeepSeek
+      </button>
+      <script>
+        const btn3 = document.getElementById('DeepSeek');
+        btn3.addEventListener('click', () => {
+          window.open('https://deepseek.ai');
+        });
+      </script>
+
+      <button class="button4" id="perplexity" style="transform: translateY(-100px); background-image: linear-gradient(to right, #036cdd, #6610f2);">
+        Perplexity
+      </button>
+      <script>
+        const btn4 = document.getElementById('perplexity');
+        btn4.addEventListener('click', () => {
+          window.open('https://perplexity.ai');
+        });
+      </script>
+
+      <button class="button5" id="meta" style="margin-top: 160px; background-image: linear-gradient(to right, #036cdd, #6610f2);">
+        Meta
+      </button>
+      <script>
+        const btn5 = document.getElementById('meta');
+        btn5.addEventListener('click', () => {
+          window.open('https://meta.ai');
+        });
+      </script>
+
+      <button class="button6" id="gemini" style="margin-top: 50px; background-image: linear-gradient(to right, #036cdd, #6610f2);">
+        Gemini
+      </button>
+      <script>
+        const btn6 = document.getElementById('gemini');
+        btn6.addEventListener('click', () => {
+          window.open('https://gemini.google.com');
+        });
+      </script>
+
+    </main>
+  </div>
+
+  <script>
+    // hover functionality
+    const buttons = document.querySelectorAll('button'); 
+
+    buttons.forEach(buttonElement => { 
+      const originalBoxShadow = buttonElement.style.boxShadow; 
+
+      buttonElement.addEventListener('mouseover', () => { 
+        buttonElement.style.opacity = '0.75';
+        buttonElement.style.boxShadow = 'none';
+      });
+
+      buttonElement.addEventListener('mouseout', () => { 
+        buttonElement.style.opacity = '1';
+        buttonElement.style.boxShadow = originalBoxShadow; 
+      });
+    });
+  </script>
+</body>
+</html>
