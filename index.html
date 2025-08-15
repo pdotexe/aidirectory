@@ -8,18 +8,23 @@
 </head>
 <body>
     <div> 
-        <main class="page"> 
+        <main class="page" id = "page">
+        <script>
+            page = document.getElementById('page');
+            
+        </script> 
+        <button class = "top-left-button" id = 'github'></button>
             <header class="main-header"> 
                 <h1>AI Directory</h1>
             </header>
-            <button class = "button1" id = "assistantbutton"  >
+            <button class = "button1" id = "assistantbutton"  style = "transform: translateY(0px)" onclick = "window.location.href = 'assistants.html'" >
                 Assistants
 
             </button>
-            <button class = "button2" id = "codingbutton" onclick = "window.location.href = 'coding.html' ">
+            <button class = "button2" id = "codingbutton" style = "transform: translateY(-124.5px)" onclick = "window.location.href = 'coding.html' ">
                 Coding
             </button>
-            <button class  = "button3" id = "diffusionbutton" onclick = "window.location.href = 'diffusion.html'">
+            <button class  = "button3" id = "diffusionbutton" style = "transform:translateY(-106px)" onclick = "window.location.href = 'diffusion.html'">
                 Diffusion
             </button>
         </main>
@@ -42,7 +47,10 @@
                     buttonElement.style.boxShadow = originalBoxShadow; 
                 });
             });
-            
+            const github = document.getElementById('github');
+            github.addEventListener('click', () => {
+                window.open('https://github.com/pdotexe/aidirectory')
+            });
     </script>
 </body>
 </html>

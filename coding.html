@@ -8,8 +8,8 @@
 <body>
   <div> 
     <main class="page">
-      
-      <button class="button1" id="copilot" style="padding: 61px 94px; margin-top: 140px; background-image: linear-gradient(to right, #036cdd, #6610f2);">
+      <button class = "headerBackButton" id = "back" onclick = "window.location.href = 'index.html'">←</button>
+      <button class="button1" id="copilot" style="padding: 61px 79px; margin-top: 140px; background-image: linear-gradient(to right, #036cdd, #6610f2);">
         Github Copilot
       </button>
       <script>
@@ -25,22 +25,22 @@
       <script>
         const btn2 = document.getElementById('Cursor');
         btn2.addEventListener('click', () => {
-          window.open('https://cursor.ai');
+          window.open('https://cursor.com');
         });
       </script>
 
-      <button class="button3" id="bolt" style="transform: translateY(-110px); background-image: linear-gradient(to right, #036cdd, #6610f2);">
+      <button class="button3" id="bolt" style="padding: 62px 124px; transform: translateY(-112.5px); background-image: linear-gradient(to right, #036cdd, #6610f2);">
         Bolt
       </button>
       <script>
-        const btn3 = document.getElementById('Bolt');
+        const btn3 = document.getElementById('bolt');
         btn3.addEventListener('click', () => {
           window.open('https://bolt.new');
         });
       </script>
 
       <button class="button4" id="v0" style= " padding: 61px 83px; transform: translateY(-126px); background-image: linear-gradient(to right, #036cdd, #6610f2);">
-        V0
+        v0 by Vercel
       </button>
       <script>
         const btn4 = document.getElementById('v0');
@@ -50,7 +50,7 @@
       </script>
 
       <button class="button5" id="windsurf" style="padding : 60px 97px; transform : translateY(-255px); background-image: linear-gradient(to right, #036cdd, #6610f2);">
-        Meta
+        Windsurf
       </button>
       <script>
         const btn5 = document.getElementById('windsurf');
@@ -59,8 +59,8 @@
         });
       </script>
 
-      <button class="button6" id="supermaven" style="padding: 61px 94px; transform: translateY(-237px); background-image: linear-gradient(to right, #036cdd, #6610f2);">
-        Gemini
+      <button class="button6" id="supermaven" style="padding: 61px 91px; transform: translateY(-237px); background-image: linear-gradient(to right, #036cdd, #6610f2);">
+        Supermaven
       </button>
       <script>
         const btn6 = document.getElementById('supermaven');
@@ -73,6 +73,7 @@
   </div>
 
   <script>
+
     // hover functionality
     const buttons = document.querySelectorAll('button'); 
 
