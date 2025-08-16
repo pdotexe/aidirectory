@@ -9,11 +9,32 @@
 <body>
     <div> 
         <main class="page" id = "page">
-        <script>
-            page = document.getElementById('page');
-            
-        </script> 
         <button class = "top-left-button" id = 'github'></button>
+        <button class =  "eye" id = "eye"></button>
+        <script> 
+            const eye = document.getElementById('eye');
+            
+           
+            eye.addEventListener('click', () => {
+                eye.classList.toggle("noeye");
+                page.classList.toggle('togglecontainer');
+                localStorage.setItem('toggleState', page.classList.contains('togglecontainer'));    
+            });
+            const page = document.getElementById('page');
+            const toggleState = localStorage.getItem('toggleState');
+
+            if (toggleState === 'true') {
+              page.classList.add('togglecontainer');
+              eye.classList.toggle("eye"); 
+            } else {
+                page.classList.remove('togglecontainer');
+            }
+
+            const github = document.getElementById('github');
+            github.addEventListener('click', () => {
+                window.open('https://github.com/pdotexe/aidirectory')
+            });
+        </script>
             <header class="main-header"> 
                 <h1>AI Directory</h1>
             </header>
@@ -47,10 +68,7 @@
                     buttonElement.style.boxShadow = originalBoxShadow; 
                 });
             });
-            const github = document.getElementById('github');
-            github.addEventListener('click', () => {
-                window.open('https://github.com/pdotexe/aidirectory')
-            });
+            
     </script>
 </body>
 </html>
