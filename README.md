@@ -1,1 +1,4 @@
-centralized AI utility interface
+Popular and  useful AI applications centralized (PoC)
+
+
+

@@ -10,31 +10,8 @@
     <div> 
         <main class="page" id = "page">
         <button class = "top-left-button" id = 'github'></button>
-        <button class =  "eye" id = "eye"></button>
-        <script> 
-            const eye = document.getElementById('eye');
-            
-           
-            eye.addEventListener('click', () => {
-                eye.classList.toggle("noeye");
-                page.classList.toggle('togglecontainer');
-                localStorage.setItem('toggleState', page.classList.contains('togglecontainer'));    
-            });
-            const page = document.getElementById('page');
-            const toggleState = localStorage.getItem('toggleState');
-
-            if (toggleState === 'true') {
-              page.classList.add('togglecontainer');
-              eye.classList.toggle("eye"); 
-            } else {
-                page.classList.remove('togglecontainer');
-            }
-
-            const github = document.getElementById('github');
-            github.addEventListener('click', () => {
-                window.open('https://github.com/pdotexe/aidirectory')
-            });
-        </script>
+        <button class =  "star" id = "star" onclick = "opacity()" ></button>
+        
             <header class="main-header"> 
                 <h1>AI Directory</h1>
             </header>
@@ -54,20 +31,63 @@
 
             // hover functionality
             const buttons = document.querySelectorAll('button'); 
-
+            
             buttons.forEach(buttonElement => { 
+                
                 const originalBoxShadow = buttonElement.style.boxShadow; 
-
+                
                 buttonElement.addEventListener('mouseover', () => { 
+                    
                     buttonElement.style.opacity = '0.75';
                     buttonElement.style.boxShadow = 'none';
+                    
+                    
+                    
                 });
 
                 buttonElement.addEventListener('mouseout', () => { 
+                    
                     buttonElement.style.opacity = '1';
                     buttonElement.style.boxShadow = originalBoxShadow; 
                 });
             });
+            const  star = document.getElementById('star');
+            
+            
+              
+                      
+            const page = document.getElementById('page');
+            const toggleState = localStorage.getItem('toggleState');
+            
+
+            
+             star.addEventListener('click', () => {
+                
+               
+               
+               
+                
+                page.classList.toggle('togglecontainer');
+                localStorage.setItem('toggleState', page.classList.contains('togglecontainer')); 
+                
+            });
+            
+            page.classList.remove('togglecontainer');
+
+            if (pageState === 'true') {
+              page.classList.add('togglecontainer');
+              
+            } else {
+                page.classList.remove('togglecontainer');
+            }
+            
+            
+            
+            const github = document.getElementById('github');
+            github.addEventListener('click', () => {
+                window.open('https://github.com/pdotexe/aidirectory')
+            });
+        
             
     </script>
 </body>
