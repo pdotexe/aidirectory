@@ -10,7 +10,7 @@
     <div> 
         <main class="page" id = "page">
         <button class = "top-left-button" id = 'github'></button>
-        <button class =  "star" id = "star" onclick = "opacity()" ></button>
+        <button class =  "star" id = "star"  ></button>
         
             <header class="main-header"> 
                 <h1>AI Directory</h1>
@@ -28,7 +28,15 @@
         </main>
     </div>
     <script>    
+            document.addEventListener('DOMContentLoaded', () =>{
+                const github = document.getElementById('github');
+            
+            github.addEventListener('click', () => {
+                window.open('https://github.com/pdotexe/aidirectory')
+            });
 
+            });
+            
             // hover functionality
             const buttons = document.querySelectorAll('button'); 
             
@@ -83,11 +91,8 @@
             
             
             
-            const github = document.getElementById('github');
-            github.addEventListener('click', () => {
-                window.open('https://github.com/pdotexe/aidirectory')
-            });
-        
+            
+            
             
     </script>
 </body>
