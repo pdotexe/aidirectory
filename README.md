@@ -1,4 +1,3 @@
-Popular and  useful AI applications centralized (PoC)
-
+made as an experiment
 
 
